@@ -15,11 +15,11 @@ export default function CheckboxWithText({ id, title, description, checked, onCh
     return (
         <div className="items-top flex spa
     ce-x-2 my-1">
-            <Checkbox id={id} className="mr-4" checked={checked} onCheckedChange={(cek) => { onChange(id, Boolean(cek)) }} />
+            <Checkbox id={id} className="mr-4 cursor-pointer" checked={checked} onCheckedChange={(cek) => { onChange(id, Boolean(cek)) }} />
             <div className="grid gap-1.5 leading-none">
                 <label
                     htmlFor={id}
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    className="cursor-pointer text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                 >
                     <h4>{title}</h4>
                 </label>
